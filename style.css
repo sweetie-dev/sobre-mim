@@ -1,427 +1,839 @@
 * {
+    /* seleciona todos os elementos */
     margin: 0;
+    /* remove a margem padrão */
     padding: 0;
+    /* remove o espaçamento interno padrão */
     box-sizing: border-box;
+    /* inclui bordas e espaçamento no tamanho total */
     font-family: 'poppins';
+    /* define a primeira família de fonte */
     text-decoration: none;
+    /* remove decorações de texto padrão */
     scroll-behavior: smooth;
+    /* ativa rolagem suave */
     list-style: none;
-    font-family: "Telex", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    /* remove marcadores de listas */
+     font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
 }
+
+/* encerra as regras globais */
 
 /*CABEÇALHO*/
 header {
+    /* seleciona o cabeçalho */
     position: fixed;
+    /* fixa o cabeçalho na tela */
     top: 1rem;
+    /* posiciona o cabeçalho a partir do topo */
     left: 50%;
+    /* coloca o início no centro horizontal */
     transform: translateX(-50%);
+    /* centraliza o cabeçalho */
     display: flex;
+    /* ativa o layout flexível */
     align-items: center;
+    /* centraliza os itens verticalmente */
     justify-content: center;
+    /* centraliza os itens horizontalmente */
     gap: 5rem;
+    /* define o espaço entre os itens */
     background-color: rgba(0, 6, 86, 0.575);
+    /* define o fundo translúcido */
     backdrop-filter: blur(8px);
+    /* aplica desfoque ao fundo */
     color: #000000;
+    /* define a cor herdada do texto */
     padding: 0.5rem 1.5rem;
+    /* define o espaçamento interno */
     border-radius: 3rem;
+    /* arredonda os cantos */
     z-index: 1000;
+    /* mantém o cabeçalho acima dos demais elementos */
 }
+
+/* encerra as regras do cabeçalho */
 
 .logo {
+    /* seleciona o elemento do logo */
     color: white;
+    /* define a cor do logo */
     font-size: 1.3rem;
+    /* define o tamanho do texto */
     font-weight: 600;
+    /* deixa o texto seminegrito */
     text-wrap: nowrap;
+    /* impede a quebra de linha */
     /*sem quebra de linha*/
     transition: 0.3s ease;
+    /* suaviza as transições */
 }
+
+/* encerra as regras do logo */
 
 .logo:hover {
+    /* seleciona o logo sob o mouse */
     transform: scale(1.1);
+    /* aumenta o logo ao passar o mouse */
 }
+
+/* encerra o efeito do logo */
 
 .nav-links {
+    /* seleciona a lista de links de navegação */
     display: flex;
+    /* organiza os links em linha */
     gap: 2rem;
+    /* define o espaço entre os links */
 }
+
+/* encerra as regras dos links */
 
 li a {
+    /* seleciona links dentro de itens de lista */
     position: relative;
+    /* permite posicionar o indicador */
     color: white;
+    /* define a cor dos links */
     font-weight: 300;
+    /* define o peso leve da fonte */
 }
+
+/* encerra as regras dos links */
 
 li a::before {
+    /* seleciona o indicador antes dos links */
     position: absolute;
+    /* posiciona o indicador em relação ao link */
     content: '';
+    /* cria o conteúdo vazio do indicador */
     width: 0;
+    /* inicia o indicador sem largura */
     left: 0;
+    /* alinha o indicador à esquerda */
     height: 5px;
+    /* define a altura do indicador */
     top: 25px;
+    /* posiciona o indicador abaixo do texto */
     border-radius: 1rem;
+    /* arredonda o indicador */
     transition: 0.3s ease-in-out;
+    /* suaviza o crescimento */
     background: linear-gradient(to right, rgb(30, 0, 254), rgb(251, 0, 255));
+    /* cria o gradiente do indicador */
 }
+
+/* encerra o indicador dos links */
 
 li a:hover::before {
+    /* seleciona o indicador de link sob o mouse */
     width: 100%;
+    /* expande o indicador ao passar o mouse */
 }
+
+/* encerra o efeito dos links */
 
 .visit-btn {
+    /* seleciona o botão de visita */
     padding: 0.8rem 1.5rem;
+    /* define o espaçamento interno do botão */
     border-radius: 3rem;
+    /* arredonda o botão */
     border: none;
+    /* remove a borda padrão */
     font-weight: 500;
+    /* define o peso da fonte */
     font-size: 1rem;
+    /* define o tamanho do texto */
     color: white;
+    /* define a cor do texto */
     cursor: pointer;
+    /* mostra o cursor de clique */
     text-wrap: nowrap;
+    /* impede a quebra do texto */
     transition: 0.3s ease-in-out;
+    /* suaviza as mudanças */
     background: linear-gradient(to right, rgb(101, 99, 211), rgb(30, 0, 254));
+    /* aplica o gradiente do botão */
 }
+
+/* encerra as regras do botão */
 
 .visit-btn:hover {
+    /* seleciona o botão sob o mouse */
     transform: scale(1.03);
+    /* aumenta levemente o botão */
     background: linear-gradient(to right, rgb(30, 0, 254), rgb(101, 99, 211));
+    /* inverte o gradiente */
 }
 
+/* encerra o efeito do botão */
+
 #menu-icon {
+    /* seleciona o ícone do menu */
     font-size: 2rem;
+    /* define o tamanho do ícone */
     display: none;
+    /* oculta o ícone inicialmente */
 }
+
+/* encerra as regras do ícone */
 
 
 
 /*SESSÕES*/
 section {
+    /* seleciona todas as seções */
     min-height: 100vh;
+    /* garante altura mínima igual à janela */
     padding: 8rem 12%;
+    /* define o espaçamento da seção */
     width: 100%;
+    /* ocupa toda a largura disponível */
     position: relative;
+    /* cria referência para posicionamentos internos */
 }
+
+/* encerra as regras das seções */
 
 /*SESSÃO SOBRE*/
 .sobre {
+    /* seleciona a seção sobre */
     display: flex;
+    /* ativa o layout flexível */
     align-items: center;
+    /* centraliza o conteúdo verticalmente */
 }
+
+/* encerra a seção sobre */
 
 .sobre .sobre-container {
+    /* seleciona o contêiner dentro da seção sobre */
     display: flex;
+    /* organiza os elementos lado a lado */
     align-items: center;
+    /* alinha os elementos verticalmente */
     justify-content: center;
+    /* centraliza os elementos horizontalmente */
     gap: 10rem;
+    /* define o espaço entre os elementos */
 }
+
+/* encerra o contêiner sobre */
 
 .sobre img {
+    /* seleciona imagens da seção sobre */
     width: 30vw;
+    /* define a largura proporcional à janela */
     border-radius: 100%;
+    /* deixa a imagem circular */
 }
+
+/* encerra as regras da imagem */
 
 .info-box {
+    /* seleciona a caixa de informações */
     display: flex;
+    /* ativa o layout flexível */
     flex-direction: column;
+    /* organiza os itens em coluna */
     text-align: center;
+    /* centraliza o texto */
     align-items: center;
+    /* centraliza os itens horizontalmente */
     justify-content: center;
+    /* centraliza os itens verticalmente */
     gap: 1.5rem;
+    /* define o espaço entre os itens */
 }
+
+/* encerra as regras da caixa de informações */
 
 .info-box h3 {
+    /* seleciona subtítulos da caixa de informações */
     font-size: 1.8rem;
+    /* define o tamanho do subtítulo */
     font-weight: 500;
+    /* define o peso do subtítulo */
     opacity: 0.9;
+    /* aplica leve transparência */
 }
+
+/* encerra as regras do subtítulo */
 
 .info-box h1 {
+    /* seleciona títulos da caixa de informações */
     font-size: 4rem;
+    /* define o tamanho do título */
     font-weight: 600;
+    /* deixa o título seminegrito */
 }
+
+/* encerra as regras do título */
 
 .info-box span {
+    /* seleciona destaques de texto */
     background: linear-gradient(to right, rgb(30, 0, 254), rgb(251, 0, 255));
+    /* cria o gradiente do texto */
     background-clip: text;
+    /* recorta o fundo no formato das letras */
     color: transparent;
+    /* deixa o gradiente visível dentro do texto */
     font-size: 2rem;
+    /* define o tamanho do texto */
 }
+
+/* encerra as regras do destaque */
 
 .socials {
+    /* seleciona o contêiner das redes sociais */
     display: flex;
+    /* organiza os ícones em linha */
     gap: 1rem;
+    /* define o espaço entre os ícones */
 }
+
+/* encerra as regras das redes sociais */
 
 .socials i {
+    /* seleciona os ícones das redes sociais */
     font-size: 2.5rem;
+    /* define o tamanho dos ícones */
     background: linear-gradient(to right, rgb(30, 0, 254), rgb(251, 0, 255));
+    /* cria o gradiente dos ícones */
     background-clip: text;
+    /* recorta o gradiente no formato dos ícones */
     color: transparent;
+    /* deixa o gradiente preencher os ícones */
     cursor: pointer;
+    /* indica que os ícones são clicáveis */
     transition: 0.3s ease-in-out;
+    /* suaviza o efeito */
 }
 
+/* encerra as regras dos ícones */
+
 .socials i:hover {
+    /* seleciona os ícones sob o mouse */
     transform: scale(1.2);
+    /* aumenta o ícone ao passar o mouse */
 }
+
+/* encerra o efeito dos ícones */
 
 /*SESSÃO HISTÓRIA*/
 .section-title {
+    /* seleciona os títulos das seções */
     text-align: center;
+    /* centraliza o título da seção */
     font-size: 4rem;
+    /* define o tamanho do título */
     font-weight: 600;
+    /* define o peso do título */
     margin-bottom: 3rem;
+    /* cria espaço abaixo do título */
 }
+
+/* encerra as regras do título da seção */
 
 .historia-info {
+    /* seleciona as informações da história */
     display: flex;
+    /* organiza as informações em linha */
     justify-content: center;
+    /* centraliza as informações */
     gap: 5rem;
+    /* define o espaço entre as informações */
 }
+
+/* encerra as regras das informações históricas */
 
 .historia img {
+    /* seleciona a imagem da história */
     width: 24vw;
+    /* define a largura proporcional da imagem */
     border-radius: 3rem;
+    /* arredonda os cantos da imagem */
 }
+
+/* encerra as regras da imagem histórica */
 
 .grid {
+    /* seleciona a grade de conteúdo */
     display: grid;
+    /* ativa o layout em grade */
     grid-template-columns: repeat(2, 1fr);
+    /* cria duas colunas iguais */
     gap: 2rem;
+    /* define o espaço entre os cartões */
 }
+
+/* encerra as regras da grade */
 
 .grid-card {
+    /* seleciona os cartões da grade */
     border: 2px solid black;
+    /* adiciona uma borda preta */
     border-radius: 3rem;
+    /* arredonda os cantos do cartão */
     padding: 3rem;
+    /* define o espaçamento interno */
     display: flex;
+    /* ativa o layout flexível */
     flex-direction: column;
+    /* organiza o conteúdo em coluna */
     align-items: baseline;
+    /* alinha os itens pela linha de base */
     justify-content: left;
+    /* alinha o conteúdo à esquerda */
     cursor: pointer;
+    /* indica que o cartão é interativo */
     transition: 0.3s ease-in-out;
+    /* suaviza as alterações */
 }
+
+/* encerra as regras dos cartões da grade */
 
 .grid-card:hover {
+    /* seleciona os cartões sob o mouse */
     transform: scale(1.05);
+    /* aumenta o cartão ao passar o mouse */
     background-color: rgb(0, 0, 0);
+    /* muda o fundo para preto */
     color: white;
+    /* muda o texto para branco */
 }
+
+/* encerra o efeito dos cartões */
 
 .grid-card i {
+    /* seleciona os ícones dos cartões */
     font-size: 1.5rem;
+    /* define o tamanho do ícone */
     margin-bottom: 1rem;
+    /* cria espaço abaixo do ícone */
 }
 
+/* encerra as regras do ícone do cartão */
+
 .grid-card span {
+    /* seleciona os textos destacados dos cartões */
     font-size: 1.5rem;
+    /* define o tamanho do texto */
     font-weight: 500;
+    /* define o peso do texto */
     background: linear-gradient(to right, rgb(30, 0, 254), rgb(251, 0, 255));
+    /* aplica o gradiente ao texto */
     background-clip: text;
+    /* recorta o fundo no formato das letras */
     color: transparent;
+    /* revela o gradiente no texto */
 }
+
+/* encerra as regras do texto do cartão */
 
 /*SESSÃO CURIOSIDADES*/
 .curiosidades-grid {
+    /* seleciona a grade de curiosidades */
     display: grid;
+    /* ativa o layout em grade */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* cria colunas responsivas */
     gap: 2rem;
+    /* define o espaço entre os cartões */
 }
+
+/* encerra a grade de curiosidades */
 
 .curiosidades-card {
+    /* seleciona os cartões de curiosidades */
     padding: 3rem;
+    /* define o espaçamento interno */
     display: flex;
+    /* ativa o layout flexível */
     flex-direction: column;
+    /* organiza o conteúdo em coluna */
     align-items: center;
+    /* centraliza os itens horizontalmente */
     justify-content: center;
+    /* centraliza os itens verticalmente */
     text-align: center;
+    /* centraliza o texto */
     gap: 1.5rem;
+    /* define o espaço entre os itens */
     border: 2px solid black;
+    /* adiciona uma borda preta */
     border-radius: 3rem;
+    /* arredonda os cantos */
     cursor: pointer;
+    /* indica que o cartão é interativo */
     transition: 0.3s ease-in-out;
+    /* suaviza as transformações */
 }
+
+/* encerra as regras dos cartões de curiosidades */
 
 .curiosidades-card:hover {
+    /* seleciona os cartões sob o mouse */
     transform: translateY(-10px) scale(1.02);
+    /* eleva e aumenta o cartão */
     background-color: black;
+    /* muda o fundo para preto */
     color: white;
+    /* muda o texto para branco */
 }
 
+/* encerra o efeito dos cartões de curiosidades */
+
 .curiosidades-card img {
+    /* seleciona imagens dos cartões */
     width: 20vw;
+    /* define a largura proporcional da imagem */
     border-radius: 2rem;
+    /* arredonda os cantos da imagem */
 }
+
+/* encerra as regras das imagens de curiosidades */
 
 /*FOOTER*/
 footer {
+    /* seleciona o rodapé */
     background-color: rgba(175, 180, 244, 0.575);
+    /* define o fundo translúcido */
     bottom: 0;
+    /* posiciona o rodapé na parte inferior */
     left: 0;
+    /* alinha o rodapé à esquerda */
     height: 10rem;
+    /* define a altura do rodapé */
     width: 100%;
+    /* ocupa toda a largura disponível */
     display: flex;
+    /* ativa o layout flexível */
     flex-direction: column;
+    /* organiza o conteúdo em coluna */
     gap: 1rem;
+    /* define o espaço entre os itens */
     align-items: center;
+    /* centraliza os itens horizontalmente */
     justify-content: center;
+    /* centraliza os itens verticalmente */
 }
+
+/* encerra as regras do rodapé */
 
 footer ul {
+    /* seleciona a lista do rodapé */
     display: flex;
+    /* organiza os links em linha */
     gap: 3rem;
+    /* define o espaço entre os links */
     align-items: center;
+    /* alinha os links verticalmente */
 }
+
+/* encerra as regras da lista do rodapé */
 
 footer ul li a {
+    /* seleciona links da lista do rodapé */
     color: rgb(0, 0, 0);
+    /* define a cor dos links */
     font-weight: 600;
+    /* deixa os links seminegritos */
 }
 
+/* encerra as regras dos links do rodapé */
+
 .copyright {
+    /* seleciona o texto de copyright */
     font-size: 300;
+    /* define o tamanho declarado para o copyright */
     margin-top: 2rem;
+    /* cria espaço acima do copyright */
 }
+
+/* encerra as regras do copyright */
 
 /*Responsividade*/
 @media(max-width:1280px) {
+
+    /* aplica regras até 1280px de largura */
     header {
+        /* ajusta o cabeçalho nessa largura */
         padding: 1rem 2rem;
+        /* reduz o espaçamento do cabeçalho */
         gap: 2rem
+            /* reduz o espaço entre os itens */
     }
+
+    /* encerra as regras do cabeçalho */
 
 
     .sobre .sobre-container {
+        /* ajusta o contêiner sobre nessa largura */
         gap: 3rem;
+        /* reduz o espaço entre os elementos sobre */
     }
+
+    /* encerra o contêiner sobre */
 
     .historia-info {
+        /* ajusta as informações nessa largura */
         flex-direction: column;
+        /* organiza as informações em coluna */
     }
+
+    /* encerra as regras das informações */
 
     .historia-info img {
+        /* ajusta a imagem nessa largura */
         display: none;
+        /* oculta a imagem em telas menores */
     }
 
+    /* encerra as regras da imagem */
+
     .curiosidades-card img {
+        /* ajusta imagens de curiosidades nessa largura */
         width: 30vw;
+        /* ajusta a largura da imagem */
         border-radius: 2rem;
+        /* mantém os cantos arredondados */
     }
+
+    /* encerra as regras da imagem */
 }
+
+/* encerra o primeiro ponto de quebra */
 
 @media(max-width:768px) {
+
+    /* aplica regras até 768px de largura */
     header {
+        /* ajusta o cabeçalho nessa largura */
         padding: 1rem 1rem;
+        /* reduz o espaçamento do cabeçalho */
         gap: 1rem
+            /* reduz o espaço entre os itens */
     }
 
+    /* encerra as regras do cabeçalho */
+
     header .logo {
+        /* ajusta o logo nessa largura */
         font-size: 1rem;
+        /* reduz o tamanho do logo */
     }
+
+    /* encerra as regras do logo */
 
     header .visit-btn {
+        /* ajusta o botão nessa largura */
         display: none;
+        /* oculta o botão de visita */
     }
+
+    /* encerra as regras do botão */
 
     .sobre-container {
+        /* ajusta o contêiner sobre nessa largura */
         flex-direction: column;
+        /* organiza o conteúdo em coluna */
     }
+
+    /* encerra as regras do contêiner sobre */
 
     .historia h2 {
+        /* ajusta o título histórico nessa largura */
         font-size: 3rem;
+        /* reduz o tamanho do título histórico */
     }
+
+    /* encerra as regras do título histórico */
 
     .curiosidades h2 {
+        /* ajusta o título de curiosidades nessa largura */
         font-size: 3rem;
+        /* reduz o tamanho do título de curiosidades */
     }
+
+    /* encerra as regras do título de curiosidades */
 
     .curiosidades-card img {
+        /* ajusta imagens de curiosidades nessa largura */
         width: 70vw;
+        /* aumenta a largura da imagem em telas pequenas */
         border-radius: 2rem;
+        /* mantém os cantos arredondados */
     }
+
+    /* encerra as regras da imagem */
 
     .grid {
+        /* ajusta a grade nessa largura */
         grid-template-columns: repeat(1, 1fr);
+        /* transforma a grade em uma coluna */
     }
 
+    /* encerra as regras da grade */
+
     header {
+        /* ajusta novamente o cabeçalho nessa largura */
         width: min(90vw, 720px);
+        /* limita a largura do cabeçalho */
         gap: 1rem;
+        /* define o espaço entre os itens */
     }
+
+    /* encerra as regras do cabeçalho */
 
     #menu-icon {
+        /* ajusta o ícone do menu nessa largura */
         display: block;
+        /* exibe o ícone do menu */
         color: white;
+        /* define a cor do ícone */
         cursor: pointer;
+        /* indica que o ícone é clicável */
         order: 3;
+        /* coloca o ícone na terceira posição */
     }
 
+    /* encerra as regras do ícone */
+
     .nav-links {
+        /* ajusta o menu de navegação nessa largura */
         position: absolute;
+        /* posiciona o menu em relação ao cabeçalho */
         top: calc(100% + 1rem);
+        /* coloca o menu abaixo do cabeçalho */
         left: 0;
+        /* alinha o menu à esquerda */
         right: 0;
+        /* estende o menu até a direita */
         display: none;
+        /* oculta o menu inicialmente */
         flex-direction: column;
+        /* organiza os links em coluna */
         align-items: center;
+        /* centraliza os links */
         gap: 1rem;
+        /* define o espaço entre os links */
         padding: 1rem 0;
+        /* define o espaçamento interno */
         background: rgba(0, 6, 86, 0.95);
+        /* define o fundo do menu */
         border-radius: 1.5rem;
+        /* arredonda o menu */
     }
+
+    /* encerra as regras do menu */
 
     .nav-links.active {
+        /* seleciona o menu ativo nessa largura */
         display: flex;
+        /* exibe o menu ativo */
     }
+
+    /* encerra o estado ativo do menu */
 
     .visit-btn {
+        /* ajusta o botão nessa largura */
         display: none;
+        /* mantém o botão oculto */
     }
+
+    /* encerra as regras do botão */
 }
+
+/* encerra o segundo ponto de quebra */
 
 @media(max-width:600px) {
+
+    /* aplica regras até 600px de largura */
     header #menu-icon {
+        /* ajusta o ícone do cabeçalho nessa largura */
         display: block;
+        /* garante a exibição do ícone */
     }
+
+    /* encerra as regras do ícone */
 
     .nav-links {
+        /* ajusta o menu nessa largura */
         position: absolute;
+        /* posiciona o menu abaixo do cabeçalho */
         top: 100%;
+        /* coloca o menu após o cabeçalho */
         margin-top: 1rem;
+        /* cria espaço acima do menu */
         width: 100%;
+        /* faz o menu ocupar toda a largura */
         padding: 1rem;
+        /* define o espaçamento interno */
         color: white;
+        /* define a cor dos links */
         display: flex;
+        /* define o layout flexível */
         flex-direction: column;
+        /* organiza os links em coluna */
         text-align: center;
+        /* centraliza os links */
         background: rgba(0, 11, 54, 0.677);
+        /* define o fundo translúcido */
         border-radius: 3rem;
+        /* arredonda o menu */
         display: none;
+        /* mantém o menu oculto inicialmente */
     }
+
+    /* encerra as regras do menu */
 
     nav-links.active {
+        /* seleciona o menu ativo nessa largura */
         display: block;
+        /* exibe o menu ativo */
     }
+
+    /* encerra o estado ativo do menu */
 
     header {
+        /* ajusta o cabeçalho nessa largura */
         padding: 1rem 5rem;
+        /* ajusta o espaçamento do cabeçalho */
         gap: 8rem;
+        /* define o espaço entre os itens */
     }
+
+    /* encerra as regras do cabeçalho */
 
     header .logo {
+        /* ajusta o logo nessa largura */
         font-size: 1.5rem;
+        /* define o tamanho do logo */
     }
+
+    /* encerra as regras do logo */
 
     .sobre-container img {
+        /* ajusta a imagem sobre nessa largura */
         width: 80vw;
+        /* amplia a imagem para telas pequenas */
     }
+
+    /* encerra as regras da imagem */
 
     footer ul {
+        /* ajusta a lista do rodapé nessa largura */
         gap: 1rem;
+        /* reduz o espaço entre os links */
         font-size: 1rem;
+        /* define o tamanho dos links */
     }
 
-    .copyright {
-        font-size: 1rem;
-    }
+    /* encerra as regras da lista */
+
 }
+
+/* encerra o terceiro ponto de quebra */
