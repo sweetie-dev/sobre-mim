@@ -6,6 +6,9 @@
     text-decoration: none;
     scroll-behavior: smooth;
     list-style: none;
+    font-family: "Telex", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /*CABEÇALHO*/
@@ -241,7 +244,7 @@ section {
 
 .curiosidades-card:hover {
     transform: translateY(-10px) scale(1.02);
-    background-color:black;
+    background-color: black;
     color: white;
 }
 
@@ -415,9 +418,10 @@ footer ul li a {
 
     footer ul {
         gap: 1rem;
-         font-size: 1rem;
+        font-size: 1rem;
     }
-    .copyright{
+
+    .copyright {
         font-size: 1rem;
     }
 }
