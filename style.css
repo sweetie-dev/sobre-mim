@@ -578,28 +578,19 @@ footer ul li a {
         /* define o fundo translúcido */
         border-radius: 3rem;
         /* arredonda o menu */
-        display: none;
-        /* mantém o menu oculto inicialmente */
+        display: none;/* mantém o menu oculto inicialmente */
     }
-    nav-links.active {
-        /* seleciona o menu ativo nessa largura */
-        display: block;
-        /* exibe o menu ativo */
+    nav-links.active {/* seleciona o menu ativo nessa largura */
+        display: block;/* exibe o menu ativo */
     }
-    header {
-        /* ajusta o cabeçalho nessa largura */
-        padding: 1rem 5rem;
-        /* ajusta o espaçamento do cabeçalho */
-        gap: 8rem;
-        /* define o espaço entre os itens */
+    header {/* ajusta o cabeçalho nessa largura */
+        padding: 1rem 5rem;/* ajusta o espaçamento do cabeçalho */
+        gap: 8rem;/* define o espaço entre os itens */
     }
-    header .logo {
-        /* ajusta o logo nessa largura */
-        font-size: 1.5rem;
-        /* define o tamanho do logo */
+    header .logo {/* ajusta o logo nessa largura */
+        font-size: 1.5rem;/* define o tamanho do logo */
     }
-    .sobre-container img {
-        /* ajusta a imagem sobre nessa largura */
+    .sobre-container img {/* ajusta a imagem sobre nessa largura */
         width: 80vw;
     }
     footer ul {
